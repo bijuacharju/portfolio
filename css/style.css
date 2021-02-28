@@ -1,0 +1,296 @@
+/* The body of website is styled with margin and padding set to 0, Poppins font family with dark gray font color. */
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+	color:#333;
+}
+
+/* The nav tag is styled with top position at screen with value of z-index set to 2 with 100% width and almost black background color. */
+nav{
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	background-color: #1d1d1d;
+}
+
+/* The nav class is styled with 60px height with 80% width, auto margin, flex display format and white font color. */
+.nav{
+	height: 60px;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	color:#ffffff;
+}
+
+/* The ul tag inside nav class is styled with 0 margin and 20px padding at top. */
+.nav ul{
+	margin:0;
+	padding: 20px 0 0 0;
+}
+
+/* the li tag inside ul tag of nav class is styled with inline block display format, no bullets in listing, and vertical middle alignment. */
+.nav ul li{
+	display: inline-block;
+	list-style: none;
+	vertical-align: middle;
+}
+
+/* The a tag inside li tag is styled with white font color with 0.4 second of transition duration. */
+li a{
+	color: #ffffff;
+	transition: 0.4s;
+}
+
+/* The a tag inside li tag while hovered is styled to red font color. */
+li:hover a{
+	color: #E6121B;
+}
+
+/* The a tag is styled with text-decoration set to none. */
+a{
+	text-decoration: none;
+}
+
+/* The brand id is styled with change in font family, 2px space between letters, 7px negative margin, 24px font size with weight of 900. */
+#brand{
+	font-family: 'Orbitron', sans-serif;
+	letter-spacing: 2px;
+	margin-top: -7px;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+/* The a tag inside brand id while hovered is styled to white font color. */
+#brand a:hover{
+	color: #ffffff;
+}
+
+/* The a tag inside selected class is styled with red font color. */
+.selected a{
+	color: #E6121B;
+}
+
+/* The menu-current id is styled with 60px padding from left. */
+#menu-current{
+	padding-left:60px;
+}
+
+/* The underline-current class is styled with 2px height with 100% width of red background color. */
+.underline-current{
+	height: 2px;
+	width: 100%;
+	background-color: #E6121B;
+}
+
+/* The menu id is styled with 13 px padding from left and right. */
+#menu{
+	padding: 0 13px;
+}
+
+/* The underline class is styled with 2px height, transparent background, 0% width, */
+.underline{
+    height: 2px;
+    background: transparent;
+    width:0%;
+    transition: 0.3s;
+    margin: auto;
+}
+
+/* When li tag is hovered, underline class is styled to red background of 100% width occupied. */
+li:hover .underline{
+    background: #E6121B;
+    width: 100%;
+}
+
+/* The progress-container class is styled with 100% width available, 4xp height with almost black background color. */
+.progress-container {
+	width: 100%;
+	height: 4px;
+	background: #1d1d1d;
+}
+
+/* The progress-bar class is styled with 0% width, 4px height with red background color. */
+.progress-bar {
+	height: 4px;
+	background: #E6121B;
+	width: 0%;
+}
+
+/* The header tag is styled with 100% of height of screen with background image with size set to cover, positioned at 0 value from
+left, right, top and bottom position of screen and -1 index value on z-axis. */
+header{
+    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/biju.JPG") no-repeat;
+	background-size: cover;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	z-index: -1;
+}
+
+/* The overlay class is styled margin of 100% screen height at top and white background color. */
+.overlay{
+	margin-top: 100vh;
+	background: white;
+}
+
+/* The footer tag is styled iwth margin of 100% screen height at top and image as background with size set to cover. */
+footer{
+	margin-top:100px;
+    background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/footer.jpg") no-repeat;
+	background-size: cover;
+}
+
+/* The footer-content class is styled with 80% width with margin set to auto, flex display format and white font color. */
+.footer-content{
+	width:80%;
+	margin:auto;
+	display: flex;
+	color: white;
+}
+
+/* The content-one id is styled with 70px margin at top with 30% width of avaialble screen width and left text alignment. */
+#content-one{
+	margin-top: 70px;
+	width:30%;
+	text-align: left;
+}
+
+/* The content-two id is styled with 70px margin at top with 40% width of avaialble screen width and left text alignment. */
+#content-two{
+	margin-top: 70px;
+	width:40%;
+	text-align: left;
+}
+
+/* The content-three id is styled with 70px margin at top with 30% width of avaialble screen width and right text alignment. */
+#content-three{
+	margin-top: 70px;
+	width:30%;
+	text-align: right;
+}
+
+/* The th tag inside tr tag of table tag is styled with change in font color, 2px space between letters, 22px font size with weight of 700
+and 20px padding at bottom. */
+table tr th{
+	font-family: 'Orbitron', sans-serif;
+	letter-spacing: 2px;
+	font-size: 22px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+/* The td tag inside tr tag and a tag inside td tag of tr tag are styled with white font color and 15px font size with weight of 300. */
+tr td, tr td a{
+	color: white;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+/* When a inside td tag of tr tag is hovered, it is styled with underline text-decoration. */
+tr td a:hover{
+	text-decoration: underline;
+}
+
+/* The p tag inside content-three id is styled with change in font color, 2px space between letters, margin set to 0 and 20px padding at bottom and 
+22px font size with weight of 700. */
+#content-three p{
+	font-family: 'Orbitron', sans-serif;
+	letter-spacing: 2px;
+	margin:0;
+	font-size: 22px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+/* The img tag inside social-links class is styled with 38px padding at left. */
+.social-links img{
+    padding-left: 38px;
+}
+
+/* The img tag inside social-links when hovered is styled with 40% opacity. */
+.social-links img:hover{
+    opacity: 0.4;
+}
+
+/* The copyright class is styled with 1.5px border at top, white font color, height of 50px, 50px margin at top and centered text alignment. */
+.copyright{
+	border-top: #eeeeee 1.5px solid;
+	color: #ffffff;
+	height:50px;
+	margin-top: 50px;
+    text-align: center;
+}
+
+/* All the properties of the elements inside media query is implemented when the browser or device window has width less or equal to 900px. */
+@media(max-width:900px){
+
+	/* When the device width is less than or equal to 900px, the nav class is styled with height of 80px, 100% of available width, 
+	block display format and centered text alignment. */
+	.nav{
+		height: 80px;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	/* When the device width is less than or equal to 900px, the menu-current id is styled with padding of 10px at right and font size of 12px. */
+	#menu-current{
+		padding: 0px 10px 0 0;
+		font-size: 12px;
+	}
+
+	/* When the device width is less than or equal to 900px, the menu id is styled with 10px padding at left and right and 5px at top and bottom 
+	with font size of 12px. */
+	#menu{
+		padding: 5px 10px;
+		font-size: 12px;
+	}
+
+	/* When the device width is less than or equal to 900px, the footer-content is styled with 100% of available width, block display format, centered text
+	alignment and 50px padding at top. */
+	.footer-content{
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-top: 50px;
+	}
+
+	/* When the device width is less than or equal to 900px, the content-one id, content-two id and content-three id are styled with 100% of available width
+	and centered text alignment. */
+	#content-one, #content-two, #content-three{
+		width: 100%;
+		text-align: center;
+	}
+
+	/* When the device width is less than or equal to 900px, the table tag is styled with 100% of available width and centered text alignment. */
+	table{
+		width: 100%;
+		text-align: center;
+	}
+
+	/* When the device width is less than or equal to 900px, the social-links class is styled with block display format, centered text alignment with
+	20ps padding at top. */
+	.social-links{
+		display: block;
+		text-align: center;
+		padding-top:20px;
+	}
+
+	/* When the device width is less than or equal to 900px, the img tag inside social-links class is styled with 20px padding at left and right.  */
+	.social-links img{
+		padding:0 20px;
+	}
+
+	/* When the device width is less than or equal to 900px, the height of 35px and font size of 10px with weight of 300. */
+	.copyright{
+        height: 35px;
+		font-size: 10px;
+		font-weight: 300;
+	}
+	
+}
