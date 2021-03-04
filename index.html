@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <!--The text that should be presented at title bar of browser is written here. -->
+        <title>Biju Acharju | IIC : Web Designer | Developer</title>
+        
+        <!-- This meta tag with charset is a Unicode Transformation Format-8 that encodes all the characters on web. -->
+        <meta charset="UTF-8">
+        
+        <!-- This meta tag calculates the device width for proper layout management of webpage. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- This meta tag holds the summary of website needed to be shown while being search in search engine. -->
+        <meta name="description" content="Biju Acharju's Website">
+        
+        <!-- This meta tag holds the short and concise  words on which basis website is presented on search list while being search in search engine. -->
+        <meta name="keywords" content="biju acharju, web design">
+        
+        <!-- This meta tag represents who the author of website is. -->
+        <meta name="author" content="Biju Acharju">
+        
+        <!-- Embedding the font-family required -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap" rel="stylesheet">
+        
+        <!-- Connecting external CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Inserting logo at title bar -->
+        <link rel="icon" href="./images/mylogo.png">
+
+        <!-- Using internal CSS -->
+        <style>
+
+            /* The class intro is styled with change in font-family, positioned from bottom-left of screen, space kept between letters and white font color. */
+            .intro{
+                font-family: 'Orbitron', sans-serif;
+                letter-spacing: 2px;
+                color: white;
+                position: absolute;
+                bottom: 30%;
+                left:10%;
+                width: 80%;
+                margin:auto;
+                overflow:hidden;
+            }
+
+            /* The h1 tag inside intro class is styled with font size of 30px with no margin. */
+            .intro h1{
+                font-size: 30px;
+                margin:0;
+            }
+            
+            /* The h2 tag inside intro class is styled with font size of 50px with no margin and space between letters set to 2px. */
+            .intro h2{
+                font-size: 50px;
+                margin: 0;
+                letter-spacing: 2px;
+            }
+            
+            /* The p tag inside intro class is styled with font size of 20px with font-weight of 600 and no margin. */
+            .intro p{
+                font-size: 20px;
+                font-weight: 600;
+                margin:0;
+            }
+            
+            /* The about class is styled with width of division set to 80%, auto-margin, justified text-alignment and top padding of 50px. */
+            .about{
+                width:80%;
+                margin:auto;
+                padding-top: 50px;
+                text-align: justify;
+            }
+            
+            /* The h5 tag inside about class and service class is styled with change in font-family, red font color, 
+            space between letters set to 6px and margin at bottom set to 20px. */
+            .about h5, .services h5{
+                font-family: 'Orbitron', sans-serif;
+                color: #E6121B;
+                margin-bottom:20px;
+                letter-spacing: 6px;
+            }
+            /* The h1 tag inside about class and service class is styled with change in font-family, no margin, 
+            space between letter set to 4px and bottom-margin of 80px. */
+            .about h1, .services h1{
+                font-family: 'Orbitron', sans-serif;
+                margin:0;
+                letter-spacing: 4px;
+                margin-bottom:80px;
+            }
+            
+            /* The about-me-content class is styled with flex display format and 40px margin from top. */
+            .about-me-content{
+                display:flex;
+                margin-top:40px;
+            }
+            
+            /* The p tag inside about-me-content class is styled with 50% width of total width, vertically center alignment,
+            20px padding from right, line height of 35px and letter spacing of 0.5px. */
+            .about-me-content p{
+                width:50%;
+                align-self: center;
+                padding-right: 20px;
+                line-height: 35px;
+                letter-spacing: 0.5px;
+            }
+
+            /* The img tag inside about-me-content class is styled with 50% width of total width, border radius of 5px,
+            0.5 second time-duration of transition for transformation and timing function of transition set to ease in and ease out. */
+            .about-me-content img{
+                width: 50%;
+                border-radius: 5px;
+                transition: 0.5s;
+                transition-timing-function: ease-in-out;
+            }
+
+            /* When the img tag inside about-me-content class is hovered, image is manipulated with scale transformation and cursor icon changed to pointer. */
+            .about-me-content img:hover{
+                transform: scale(1.07);
+                cursor: pointer;
+            }
+            
+            /* The service class is styled with width 80% of total width with auto margin that brings the division into 
+            horizontal center with padding of 100px from top. */
+            .services{
+                width: 80%;
+                margin:auto;
+                padding-top: 100px;
+            }
+            
+            /* The services-content class is styled with flex display format and 130px margin from top. */
+            .services-content{
+                display:flex;
+                margin-top:130px;
+            }
+            
+            /* The first-content class is styled with width of 32% of total width, centered text alignment, 4px border radius,
+            a shadow behind division, 5px thick red border at bottom of div, 1px margin and 0.3s time duration for transition. */
+            .first-content{
+                width:32%;
+                text-align: center;
+                border-radius: 4px;
+                box-shadow: 0px 2px 5px #696969;
+                border-bottom: rgb(214, 6, 17) 5px solid;
+                margin: 1%;
+                transition: 0.3s;
+            }
+            
+            /* When first-content class is hovered shadow increases to 10px wide with change of cursor icon to pointer.*/
+            .first-content:hover{
+                box-shadow: 0px 2px 10px #696969;
+                cursor: pointer;
+            }
+            
+            /* The img tag inside first-content class is styled with negative top margin of 35px, 10px of padding and border radius,
+            white background color, gray background shadow behind the image and 0.3s time duration of transition. */
+            .first-content img{
+                margin-top: -35px;
+                padding:10px;
+                border-radius: 10px;
+                background: white;
+                box-shadow: 0px -2px 2px #b1b1b1;
+                transition: 0.3s;
+            }
+            
+            /* The img tag when first-content class is hovered is styled with increase of width of shadow to 4px. */
+            .first-content:hover img{
+                box-shadow: 0px -2px 4px #696969;
+            }
+            
+            /* The h4 tag inside first-content class is styled with change in font family with 1px spacing between letters, 
+            30px padding at top, 20px font size and 0px margin. */
+            .first-content h4{
+                font-family: 'Orbitron', sans-serif;
+                letter-spacing: 1px;
+                padding-top: 30px;
+                font-size: 20px;
+                margin:0;
+            }
+            
+            /* The p tag inside first-content class is styled with 0px margin with 30px padding, line height of 35px and 0.5px spacing between letter. */
+            .first-content p{
+                margin: 0;
+                padding:30px;
+                line-height: 35px;
+                letter-spacing: 0.5px;
+            }
+            
+            /* All the properties of the elements inside media query is implemented when the browser or device window has width less or equal to 900px. */
+            @media (max-width:900px) {
+
+                /* When the device width is less than or equal to 900px, intro class is styled to 15% height from bottom. */
+                .intro{
+                bottom: 15%;
+                } 
+                
+                /* When the device width is less than or equal to 900px, h1 tag inside intro class is styled to 20px font size. */
+                .intro h1{
+                    font-size: 20px;
+                }
+                
+                /* When the device width is less than or equal to 900px, h2 tag inside intro class is styled to 35px font size. */
+                .intro h2{
+                    font-size: 35px;
+                }
+                
+                /* When the device width is less than or equal to 900px, p tag inside intro class is styled to 15px font size. */
+                .intro p{
+                    font-size: 15px;
+                }
+                
+                
+                /* When the device width is less than or equal to 900px, display format of about-me-content class is styled to block. */
+                .about-me-content{
+                    display: block;
+                }
+                
+                /* When the device width is less than or equal to 900px, p tag and img tag inside intro class is styled to 100% width. */
+                .about-me-content p, .about-me-content img{
+                    width:100%;
+                }
+                
+                /* When the device width is less than or equal to 900px, display format of services-content class is styled to block. */
+                .services-content{
+                    display: block;
+                }
+                
+                /* When the device width is less than or equal to 900px, display format of first-content class is styled with 100% width,
+                top and bottom margin of 80px each. */
+                .first-content{
+                    width:100%;
+                    margin-top:80px;
+                    margin-bottom:80px;
+                }
+
+            }
+
+        </style>
+
+    </head>
+
+    <!-- Content to be shown at the webpage -->
+    <body>
+
+        <!-- This division holds the navigation bar of the website. -->
+        <nav>
+
+            <div class="nav">
+
+                <!-- This list holds the name of the person who owns this website. -->
+                <ul>
+
+                    <li id="brand">
+                        <a href="#">BIJU ACHARJU</a>
+                    </li>
+
+                </ul>
+
+                <!-- This list holds the navigation items that allows the visitor to visit from one page to another. -->
+                <ul id="menu-current">
+
+                    <li id="menu" class="selected">
+                        <a href="./index.html">Home</a>
+                        <div class="underline-current"></div>
+                    </li>
+                    
+                    <li id="menu">
+                        <a href="./contact.html">Contact</a>
+                        <div class="underline"></div>
+                    </li>
+
+                    <li id="menu">
+                        <a href="./cv.html">CV</a>
+                        <div class="underline"></div>
+                    </li>
+                    
+                    <li id="menu">
+                        <a href="./blogs.html">Blogs</a>
+                        <div class="underline"></div>
+                    </li>
+                    
+                    <li id="menu">
+                        <a href="./research.html">Research</a>
+                        <div class="underline"></div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- This division indicates how far the visitor has scrolled below. -->
+            <div class="progress-container">
+
+                <div class="progress-bar" id="scrollProgress"></div>
+
+            </div>
+
+        </nav>
+        <!-- End of division for navigation bar. -->
+
+        <!-- In this section, background image and height of hero area is determined. -->
+        <header>
+
+            <!-- This division introduces the owner of website to visitor. -->
+            <div class="intro">
+
+                <h1>Hi!</h1>
+                <h2>I'm <span style="color: rgb(177, 3, 12);">BIJU ACHARJU.</span></h2>
+                <p>Web Developer | Programmer.</p>
+
+            </div>
+
+        </header>
+        <!-- End of hero area. -->
+
+        <!-- This division sets the background of the contents inside it. -->
+        <div class="overlay">
+            
+            <!-- This section holds the introductionory content. -->
+            <section class="about">
+
+                <h5>ABOUT ME</h5>
+                <h1>WHO AM I?</h1>
+
+                <div class="about-me-content">
+
+                    <p>
+                        I am <strong>Biju Acharju</strong>, a resident of Sunsari, Nepal. 
+                        I am a student of Ithari International College taking undergraduate three years course of Bsc (Hons) Computing. 
+                        To be honest, I am a technological enthusiast especially in the field of web and application design and development. 
+                        And I love to use the latest trend of design in my work. 
+                    </p>
+                    <img src="./images/caption.jpg" alt="Photo of Biju Acharju">
+
+                </div>
+
+            </section>
+            <!-- End of introduction. -->
+
+            <!-- This section represents what works is offered to clients. -->
+            <section class="services">
+                
+                <!-- Topic of contens placed at top of content. -->
+                <h5>SERVICES</h5>
+                <h1>MY EXPERTISE</h1>
+                
+                <!-- This division holds all the contents of service with description. -->
+                <div class="services-content">
+
+                    <!-- This division shows the service provided to clients. -->
+                    <div class="first-content">
+
+                        <img src="./images/design.png" alt="Icon of designing" height="80px">
+                        <h4><span style="color: #E6121B;">WEB</span> DESIGN</h4>
+                        <p>
+                            I provide amazing designs for webpages to my clients. 
+                            With my graphics designing skills, using photoshop I can provide the designs to my clients as per their requirement. 
+                            You can hire me for the design you need for your website.
+                        </p>
+                    
+                    </div>
+
+                    <!-- This division shows the service provided to clients. -->
+                    <div class="first-content">
+
+                        <img src="./images/video.png" alt="Icon of video editing" height="80px">
+                        <h4><span style="color: #E6121B;">VIDEO</span> EDITING</h4>
+                        <p>
+                            I can provide excellent video collaboration to my clients respective to video clips provided. 
+                            Using Adobe Premiere Pro with my innovative ideas, I produce promotional and intro videos. 
+                            You can contact me for some awesome videos.
+                        </p>
+
+                    </div>
+
+                    <!-- This division shows the service provided to clients. -->
+                    <div class="first-content">
+
+                        <img src="./images/web-development.png" alt="Icon of web development" height="80px">
+                        <h4><span style="color: #E6121B;">WEB</span> DEVELOPMENT</h4>
+                        <p>
+                            With my knowledge and the skill, I can develop responsive websites from scratch and using frameworks like bootstrap. 
+                            I can develop the website for my clients as per their requirements. 
+                            I specialize in front-end web development.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- End of content of service. -->
+
+            </section>
+
+            <!-- This footer division holds the background image and contents of footer. -->
+            <footer>
+
+                <div class="footer-content">
+
+                    <!-- This division holds the first block of footer section. -->
+                    <div  id="content-one">
+                        
+                        <!-- This is a table to perfectly hold the data to be presented at footer section. -->
+                        <table>
+
+                            <tr>
+                                <th>Contact:</th>
+                            </tr>
+
+                            <tr>
+                                <td>+977 9817380695</td>
+                            </tr>
+
+                            <tr>
+                                <td>bijuacharju4@gmail.com</td>
+                            </tr>
+
+                            <tr>
+                                <td>www.bijuacharju.com.np</td>
+                            </tr>
+                        
+                        </table>
+
+                    </div>
+
+                    <!-- This division holds the second block of footer section. -->
+                    <div  id="content-two">
+
+                        <!-- This is a table to perfectly hold the data to be presented at footer section. -->
+                        <table>
+
+                            <tr>
+                                <th>Useful-Links:</th>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.w3schools.com/html/default.asp" target="_blank">www.w3schools.com/html/default.asp</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.w3schools.com/css/default.asp" target="_blank">www.w3schools.com/css/default.asp</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="https://www.w3schools.com/js/default.asp" target="_blank">www.w3schools.com/js/default.asp</a></td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                    <!-- This division holds the third block of footer section. -->
+                    <div  id="content-three">
+
+                        <p>Stay Connected:</p>
+
+                        <!-- Thid division holds the icon to directs the visitor towards the profile at social medias. -->
+                        <div class="social-links">
+                                
+                            <a href="https://www.facebook.com/biju.acharju" target="_blank">
+                                <img src="./images/facebook.png" alt="Icon of facebook" height="30px">
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/biju-acharju-4b4485182/" target="_blank">
+                                <img src="./images/linkedin.png" alt="Icon of linkedin" height="30px">
+                            </a>
+                            
+                            <a href="https://twitter.com/AcharjuBiju" target="_blank">
+                                <img src="./images/twitter.png" alt="Icon of twitter" height="30px">
+                            </a>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <!-- This division represents to whom copyright of website belongs. -->
+                <div class="copyright">
+                    <p>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed by 
+                        <strong><span style="color: #E6121B;">Biju Acharju</span></strong>
+                    </p>
+                </div>
+
+            </footer>
+            <!-- End of footer section. -->
+
+        </div>
+        <!-- End of overlay division -->
+
+        <!-- This code connects to external javascript. -->
+        <script src="./javascript/script.js"></script>
+
+    </body>
+    <!-- End of content to be shown in webpage. -->
+
+</html>
