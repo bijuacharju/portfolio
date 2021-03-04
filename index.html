@@ -1,347 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        
-        <!--The text that should be presented at title bar of browser is written here. -->
-        <title>Biju Acharju | IIC : Web Designer | Developer</title>
-        
-        <!-- This meta tag with charset is a Unicode Transformation Format-8 that encodes all the characters on web. -->
-        <meta charset="UTF-8">
-        
-        <!-- This meta tag calculates the device width for proper layout management of webpage. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- This meta tag holds the summary of website needed to be shown while being search in search engine. -->
-        <meta name="description" content="Biju Acharju's Website">
-        
-        <!-- This meta tag holds the short and concise  words on which basis website is presented on search list while being search in search engine. -->
-        <meta name="keywords" content="biju acharju, web design">
-        
-        <!-- This meta tag represents who the author of website is. -->
-        <meta name="author" content="Biju Acharju">
-        
-        <!-- Embedding the font-family required -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap" rel="stylesheet">
-        
-        <!-- Connecting external CSS -->
-        <link rel="stylesheet" href="./css/style.css">
-
-        <!-- Inserting logo at title bar -->
-        <link rel="icon" href="./images/mylogo.png">
-
-        <!-- Using internal CSS -->
-        <style>
-
-            
-            
-            /* All the properties of the elements inside media query is implemented when the browser or device window has width less or equal to 900px. */
-            @media (max-width:900px) {
-
-                /* When the device width is less than or equal to 900px, intro class is styled to 15% height from bottom. */
-                .intro{
-                bottom: 15%;
-                } 
-                
-                /* When the device width is less than or equal to 900px, h1 tag inside intro class is styled to 20px font size. */
-                .intro h1{
-                    font-size: 20px;
-                }
-                
-                /* When the device width is less than or equal to 900px, h2 tag inside intro class is styled to 35px font size. */
-                .intro h2{
-                    font-size: 35px;
-                }
-                
-                /* When the device width is less than or equal to 900px, p tag inside intro class is styled to 15px font size. */
-                .intro p{
-                    font-size: 15px;
-                }
-                
-                
-                /* When the device width is less than or equal to 900px, display format of about-me-content class is styled to block. */
-                .about-me-content{
-                    display: block;
-                }
-                
-                /* When the device width is less than or equal to 900px, p tag and img tag inside intro class is styled to 100% width. */
-                .about-me-content p, .about-me-content img{
-                    width:100%;
-                }
-                
-                /* When the device width is less than or equal to 900px, display format of services-content class is styled to block. */
-                .services-content{
-                    display: block;
-                }
-                
-                /* When the device width is less than or equal to 900px, display format of first-content class is styled with 100% width,
-                top and bottom margin of 80px each. */
-                .first-content{
-                    width:100%;
-                    margin-top:80px;
-                    margin-bottom:80px;
-                }
-
-            }
-
-        </style>
-
-    </head>
-
-    <!-- Content to be shown at the webpage -->
-    <body>
-
-        <!-- This division holds the navigation bar of the website. -->
-        <nav>
-
-            <div class="nav">
-
-                <!-- This list holds the name of the person who owns this website. -->
-                <ul>
-
-                    <li id="brand">
-                        <a href="#">BIJU ACHARJU</a>
-                    </li>
-
-                </ul>
-
-                <!-- This list holds the navigation items that allows the visitor to visit from one page to another. -->
-                <ul id="menu-current">
-
-                    <li id="menu" class="selected">
-                        <a href="./index.html">Home</a>
-                        <div class="underline-current"></div>
-                    </li>
-                    
-                    <li id="menu">
-                        <a href="./contact.html">Contact</a>
-                        <div class="underline"></div>
-                    </li>
-
-                    <li id="menu">
-                        <a href="./cv.html">CV</a>
-                        <div class="underline"></div>
-                    </li>
-                    
-                    <li id="menu">
-                        <a href="./blogs.html">Blogs</a>
-                        <div class="underline"></div>
-                    </li>
-                    
-                    <li id="menu">
-                        <a href="./research.html">Research</a>
-                        <div class="underline"></div>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!-- This division indicates how far the visitor has scrolled below. -->
-            <div class="progress-container">
-
-                <div class="progress-bar" id="scrollProgress"></div>
-
-            </div>
-
-        </nav>
-        <!-- End of division for navigation bar. -->
-
-        <!-- In this section, background image and height of hero area is determined. -->
-        <header>
-
-            <!-- This division introduces the owner of website to visitor. -->
-            <div class="intro">
-
-                <h1>Hi!</h1>
-                <h2>I'm <span style="color: rgb(177, 3, 12);">BIJU ACHARJU.</span></h2>
-                <p>Web Developer | Programmer.</p>
-
-            </div>
-
-        </header>
-        <!-- End of hero area. -->
-
-        <!-- This division sets the background of the contents inside it. -->
-        <div class="overlay">
-            
-            <!-- This section holds the introductionory content. -->
-            <section class="about">
-
-                <h5>ABOUT ME</h5>
-                <h1>WHO AM I?</h1>
-
-                <div class="about-me-content">
-
-                    <p>
-                        I am <strong>Biju Acharju</strong>, a resident of Sunsari, Nepal. 
-                        I am a student of Ithari International College taking undergraduate three years course of Bsc (Hons) Computing. 
-                        To be honest, I am a technological enthusiast especially in the field of web and application design and development. 
-                        And I love to use the latest trend of design in my work. 
-                    </p>
-                    <img src="./images/caption.jpg" alt="Photo of Biju Acharju">
-
-                </div>
-
-            </section>
-            <!-- End of introduction. -->
-
-            <!-- This section represents what works is offered to clients. -->
-            <section class="services">
-                
-                <!-- Topic of contens placed at top of content. -->
-                <h5>SERVICES</h5>
-                <h1>MY EXPERTISE</h1>
-                
-                <!-- This division holds all the contents of service with description. -->
-                <div class="services-content">
-
-                    <!-- This division shows the service provided to clients. -->
-                    <div class="first-content">
-
-                        <img src="./images/design.png" alt="Icon of designing" height="80px">
-                        <h4><span style="color: #E6121B;">WEB</span> DESIGN</h4>
-                        <p>
-                            I provide amazing designs for webpages to my clients. 
-                            With my graphics designing skills, using photoshop I can provide the designs to my clients as per their requirement. 
-                            You can hire me for the design you need for your website.
-                        </p>
-                    
-                    </div>
-
-                    <!-- This division shows the service provided to clients. -->
-                    <div class="first-content">
-
-                        <img src="./images/video.png" alt="Icon of video editing" height="80px">
-                        <h4><span style="color: #E6121B;">VIDEO</span> EDITING</h4>
-                        <p>
-                            I can provide excellent video collaboration to my clients respective to video clips provided. 
-                            Using Adobe Premiere Pro with my innovative ideas, I produce promotional and intro videos. 
-                            You can contact me for some awesome videos.
-                        </p>
-
-                    </div>
-
-                    <!-- This division shows the service provided to clients. -->
-                    <div class="first-content">
-
-                        <img src="./images/web-development.png" alt="Icon of web development" height="80px">
-                        <h4><span style="color: #E6121B;">WEB</span> DEVELOPMENT</h4>
-                        <p>
-                            With my knowledge and the skill, I can develop responsive websites from scratch and using frameworks like bootstrap. 
-                            I can develop the website for my clients as per their requirements. 
-                            I specialize in front-end web development.
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- End of content of service. -->
-
-            </section>
-
-            <!-- This footer division holds the background image and contents of footer. -->
-            <footer>
-
-                <div class="footer-content">
-
-                    <!-- This division holds the first block of footer section. -->
-                    <div  id="content-one">
-                        
-                        <!-- This is a table to perfectly hold the data to be presented at footer section. -->
-                        <table>
-
-                            <tr>
-                                <th>Contact:</th>
-                            </tr>
-
-                            <tr>
-                                <td>+977 9817380695</td>
-                            </tr>
-
-                            <tr>
-                                <td>bijuacharju4@gmail.com</td>
-                            </tr>
-
-                            <tr>
-                                <td>www.bijuacharju.com.np</td>
-                            </tr>
-                        
-                        </table>
-
-                    </div>
-
-                    <!-- This division holds the second block of footer section. -->
-                    <div  id="content-two">
-
-                        <!-- This is a table to perfectly hold the data to be presented at footer section. -->
-                        <table>
-
-                            <tr>
-                                <th>Useful-Links:</th>
-                            </tr>
-
-                            <tr>
-                                <td><a href="https://www.w3schools.com/html/default.asp" target="_blank">www.w3schools.com/html/default.asp</a></td>
-                            </tr>
-
-                            <tr>
-                                <td><a href="https://www.w3schools.com/css/default.asp" target="_blank">www.w3schools.com/css/default.asp</a></td>
-                            </tr>
-
-                            <tr>
-                                <td><a href="https://www.w3schools.com/js/default.asp" target="_blank">www.w3schools.com/js/default.asp</a></td>
-                            </tr>
-
-                        </table>
-
-                    </div>
-
-                    <!-- This division holds the third block of footer section. -->
-                    <div  id="content-three">
-
-                        <p>Stay Connected:</p>
-
-                        <!-- Thid division holds the icon to directs the visitor towards the profile at social medias. -->
-                        <div class="social-links">
-                                
-                            <a href="https://www.facebook.com/biju.acharju" target="_blank">
-                                <img src="./images/facebook.png" alt="Icon of facebook" height="30px">
-                            </a>
-
-                            <a href="https://www.linkedin.com/in/biju-acharju-4b4485182/" target="_blank">
-                                <img src="./images/linkedin.png" alt="Icon of linkedin" height="30px">
-                            </a>
-                            
-                            <a href="https://twitter.com/AcharjuBiju" target="_blank">
-                                <img src="./images/twitter.png" alt="Icon of twitter" height="30px">
-                            </a>
-                        
-                        </div>
-
-                    </div>
-
-                </div>
-                
-                <!-- This division represents to whom copyright of website belongs. -->
-                <div class="copyright">
-                    <p>
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed by 
-                        <strong><span style="color: #E6121B;">Biju Acharju</span></strong>
-                    </p>
-                </div>
-
-            </footer>
-            <!-- End of footer section. -->
+<head>
+
+    <!--The text that should be presented at title bar of browser is written here. -->
+    <title>Biju Acharju | IIC : Web Designer | Developer</title>
+
+    <!-- This meta tag with charset is a Unicode Transformation Format-8 that encodes all the characters on web. -->
+    <meta charset="UTF-8">
+
+    <!-- This meta tag calculates the device width for proper layout management of webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This meta tag holds the summary of website needed to be shown while being search in search engine. -->
+    <meta name="description" content="Biju Acharju's Website">
+
+    <!-- This meta tag holds the short and concise  words on which basis website is presented on search list while being search in search engine. -->
+    <meta name="keywords" content="biju acharju, web design">
+
+    <!-- This meta tag represents who the author of website is. -->
+    <meta name="author" content="Biju Acharju">
+
+    <!-- Embedding the font-family required -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Connecting external CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Inserting logo at title bar -->
+    <link rel="icon" href="./images/mylogo.png">
+
+</head>
+
+<!-- Content to be shown at the webpage -->
+
+<body>
+
+    <!-- This division holds the navigation bar of the website. -->
+    <nav>
+
+        <div class="nav">
+
+            <!-- This list holds the name of the person who owns this website. -->
+            <ul>
+
+                <li id="brand">
+                    <a href="#">BIJU ACHARJU</a>
+                </li>
+
+            </ul>
+
+            <!-- This list holds the navigation items that allows the visitor to visit from one page to another. -->
+            <ul id="menu-current">
+
+                <li id="menu" class="selected">
+                    <a href="./index.html">Home</a>
+                    <div class="underline-current"></div>
+                </li>
+
+                <li id="menu">
+                    <a href="./contact.html">Contact</a>
+                    <div class="underline"></div>
+                </li>
+
+                <li id="menu">
+                    <a href="./cv.html">CV</a>
+                    <div class="underline"></div>
+                </li>
+
+                <li id="menu">
+                    <a href="./blogs.html">Blogs</a>
+                    <div class="underline"></div>
+                </li>
+
+                <li id="menu">
+                    <a href="./research.html">Research</a>
+                    <div class="underline"></div>
+                </li>
+
+            </ul>
 
         </div>
-        <!-- End of overlay division -->
 
-        <!-- This code connects to external javascript. -->
-        <script src="./javascript/script.js"></script>
+        <!-- This division indicates how far the visitor has scrolled below. -->
+        <div class="progress-container">
 
-    </body>
-    <!-- End of content to be shown in webpage. -->
+            <div class="progress-bar" id="scrollProgress"></div>
+
+        </div>
+
+    </nav>
+    <!-- End of division for navigation bar. -->
+
+    <!-- In this section, background image and height of hero area is determined. -->
+    <header>
+
+        <!-- This division introduces the owner of website to visitor. -->
+        <div class="intro">
+
+            <h1>Hi!</h1>
+            <h2>I'm <span style="color: rgb(177, 3, 12);">BIJU ACHARJU.</span></h2>
+            <p>Web Developer | Programmer.</p>
+
+        </div>
+
+    </header>
+    <!-- End of hero area. -->
+
+    <!-- This division sets the background of the contents inside it. -->
+    <div class="overlay">
+
+        <!-- This section holds the introductionory content. -->
+        <section class="about">
+
+            <h5>ABOUT ME</h5>
+            <h1>WHO AM I?</h1>
+
+            <div class="about-me-content">
+
+                <p>
+                    I am <strong>Biju Acharju</strong>, a resident of Sunsari, Nepal.
+                    I am a student of Ithari International College taking undergraduate three years course of Bsc (Hons)
+                    Computing.
+                    To be honest, I am a technological enthusiast especially in the field of web and application design
+                    and development.
+                    And I love to use the latest trend of design in my work.
+                </p>
+                <img src="./images/caption.jpg" alt="Photo of Biju Acharju">
+
+            </div>
+
+        </section>
+        <!-- End of introduction. -->
+
+        <!-- This section represents what works is offered to clients. -->
+        <section class="services">
+
+            <!-- Topic of contens placed at top of content. -->
+            <h5>SERVICES</h5>
+            <h1>MY EXPERTISE</h1>
+
+            <!-- This division holds all the contents of service with description. -->
+            <div class="services-content">
+
+                <!-- This division shows the service provided to clients. -->
+                <div class="first-content">
+
+                    <img src="./images/design.png" alt="Icon of designing" height="80px">
+                    <h4><span style="color: #E6121B;">WEB</span> DESIGN</h4>
+                    <p>
+                        I provide amazing designs for webpages to my clients.
+                        With my graphics designing skills, using photoshop I can provide the designs to my clients as
+                        per their requirement.
+                        You can hire me for the design you need for your website.
+                    </p>
+
+                </div>
+
+                <!-- This division shows the service provided to clients. -->
+                <div class="first-content">
+
+                    <img src="./images/video.png" alt="Icon of video editing" height="80px">
+                    <h4><span style="color: #E6121B;">VIDEO</span> EDITING</h4>
+                    <p>
+                        I can provide excellent video collaboration to my clients respective to video clips provided.
+                        Using Adobe Premiere Pro with my innovative ideas, I produce promotional and intro videos.
+                        You can contact me for some awesome videos.
+                    </p>
+
+                </div>
+
+                <!-- This division shows the service provided to clients. -->
+                <div class="first-content">
+
+                    <img src="./images/web-development.png" alt="Icon of web development" height="80px">
+                    <h4><span style="color: #E6121B;">WEB</span> DEVELOPMENT</h4>
+                    <p>
+                        With my knowledge and the skill, I can develop responsive websites from scratch and using
+                        frameworks like bootstrap.
+                        I can develop the website for my clients as per their requirements.
+                        I specialize in front-end web development.
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- End of content of service. -->
+
+        </section>
+
+        <!-- This footer division holds the background image and contents of footer. -->
+        <footer>
+
+            <div class="footer-content">
+
+                <!-- This division holds the first block of footer section. -->
+                <div id="content-one">
+
+                    <!-- This is a table to perfectly hold the data to be presented at footer section. -->
+                    <table>
+
+                        <tr>
+                            <th>Contact:</th>
+                        </tr>
+
+                        <tr>
+                            <td>+977 9817380695</td>
+                        </tr>
+
+                        <tr>
+                            <td>bijuacharju4@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>www.bijuacharju.com.np</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <!-- This division holds the second block of footer section. -->
+                <div id="content-two">
+
+                    <!-- This is a table to perfectly hold the data to be presented at footer section. -->
+                    <table>
+
+                        <tr>
+                            <th>Useful-Links:</th>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.w3schools.com/html/default.asp"
+                                    target="_blank">www.w3schools.com/html/default.asp</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.w3schools.com/css/default.asp"
+                                    target="_blank">www.w3schools.com/css/default.asp</a></td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.w3schools.com/js/default.asp"
+                                    target="_blank">www.w3schools.com/js/default.asp</a></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <!-- This division holds the third block of footer section. -->
+                <div id="content-three">
+
+                    <p>Stay Connected:</p>
+
+                    <!-- Thid division holds the icon to directs the visitor towards the profile at social medias. -->
+                    <div class="social-links">
+
+                        <a href="https://www.facebook.com/biju.acharju" target="_blank">
+                            <img src="./images/facebook.png" alt="Icon of facebook" height="30px">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/biju-acharju-4b4485182/" target="_blank">
+                            <img src="./images/linkedin.png" alt="Icon of linkedin" height="30px">
+                        </a>
+
+                        <a href="https://twitter.com/AcharjuBiju" target="_blank">
+                            <img src="./images/twitter.png" alt="Icon of twitter" height="30px">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- This division represents to whom copyright of website belongs. -->
+            <div class="copyright">
+                <p>
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | Designed by
+                    <strong><span style="color: #E6121B;">Biju Acharju</span></strong>
+                </p>
+            </div>
+
+        </footer>
+        <!-- End of footer section. -->
+
+    </div>
+    <!-- End of overlay division -->
+
+    <!-- This code connects to external javascript. -->
+    <script src="./javascript/script.js"></script>
+
+</body>
+<!-- End of content to be shown in webpage. -->
 
 </html>

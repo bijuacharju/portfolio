@@ -1,13 +1,13 @@
 /* The body of website is styled with margin and padding set to 0, Poppins font family with dark gray font color. */
-body{
-	margin:0;
-	padding:0;
+body {
+	margin: 0;
+	padding: 0;
 	font-family: 'Poppins', sans-serif;
-	color:#333;
+	color: #333;
 }
 
 /* The nav tag is styled with top position at screen with value of z-index set to 2 with 100% width and almost black background color. */
-nav{
+nav {
 	position: fixed;
 	top: 0;
 	z-index: 2;
@@ -16,45 +16,45 @@ nav{
 }
 
 /* The nav class is styled with 60px height with 80% width, auto margin, flex display format and white font color. */
-.nav{
+.nav {
 	height: 60px;
 	width: 80%;
 	margin: auto;
 	display: flex;
-	color:#ffffff;
+	color: #ffffff;
 }
 
 /* The ul tag inside nav class is styled with 0 margin and 20px padding at top. */
-.nav ul{
-	margin:0;
+.nav ul {
+	margin: 0;
 	padding: 20px 0 0 0;
 }
 
 /* the li tag inside ul tag of nav class is styled with inline block display format, no bullets in listing, and vertical middle alignment. */
-.nav ul li{
+.nav ul li {
 	display: inline-block;
 	list-style: none;
 	vertical-align: middle;
 }
 
 /* The a tag inside li tag is styled with white font color with 0.4 second of transition duration. */
-li a{
+li a {
 	color: #ffffff;
 	transition: 0.4s;
 }
 
 /* The a tag inside li tag while hovered is styled to red font color. */
-li:hover a{
+li:hover a {
 	color: #E6121B;
 }
 
 /* The a tag is styled with text-decoration set to none. */
-a{
+a {
 	text-decoration: none;
 }
 
 /* The brand id is styled with change in font family, 2px space between letters, 7px negative margin, 24px font size with weight of 900. */
-#brand{
+#brand {
 	font-family: 'Orbitron', sans-serif;
 	letter-spacing: 2px;
 	margin-top: -7px;
@@ -63,45 +63,45 @@ a{
 }
 
 /* The a tag inside brand id while hovered is styled to white font color. */
-#brand a:hover{
+#brand a:hover {
 	color: #ffffff;
 }
 
 /* The a tag inside selected class is styled with red font color. */
-.selected a{
+.selected a {
 	color: #E6121B;
 }
 
 /* The menu-current id is styled with 60px padding from left. */
-#menu-current{
-	padding-left:60px;
+#menu-current {
+	padding-left: 60px;
 }
 
 /* The underline-current class is styled with 2px height with 100% width of red background color. */
-.underline-current{
+.underline-current {
 	height: 2px;
 	width: 100%;
 	background-color: #E6121B;
 }
 
 /* The menu id is styled with 13 px padding from left and right. */
-#menu{
+#menu {
 	padding: 0 13px;
 }
 
 /* The underline class is styled with 2px height, transparent background, 0% width, */
-.underline{
-    height: 2px;
-    background: transparent;
-    width:0%;
-    transition: 0.3s;
-    margin: auto;
+.underline {
+	height: 2px;
+	background: transparent;
+	width: 0%;
+	transition: 0.3s;
+	margin: auto;
 }
 
 /* When li tag is hovered, underline class is styled to red background of 100% width occupied. */
-li:hover .underline{
-    background: #E6121B;
-    width: 100%;
+li:hover .underline {
+	background: #E6121B;
+	width: 100%;
 }
 
 /* The progress-container class is styled with 100% width available, 4xp height with almost black background color. */
@@ -120,8 +120,8 @@ li:hover .underline{
 
 /* The header tag is styled with 100% of height of screen with background image with size set to cover, positioned at 0 value from
 left, right, top and bottom position of screen and -1 index value on z-axis. */
-header{
-    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/biju.JPG") no-repeat;
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/biju.JPG") no-repeat;
 	background-size: cover;
 	height: 100vh;
 	top: 0;
@@ -133,50 +133,50 @@ header{
 }
 
 /* The overlay class is styled margin of 100% screen height at top and white background color. */
-.overlay{
+.overlay {
 	margin-top: 100vh;
 	background: white;
 }
 
 /* The footer tag is styled iwth margin of 100% screen height at top and image as background with size set to cover. */
-footer{
-	margin-top:100px;
-    background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/footer.jpg") no-repeat;
+footer {
+	margin-top: 100px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../images/footer.jpg") no-repeat;
 	background-size: cover;
 }
 
 /* The footer-content class is styled with 80% width with margin set to auto, flex display format and white font color. */
-.footer-content{
-	width:80%;
-	margin:auto;
+.footer-content {
+	width: 80%;
+	margin: auto;
 	display: flex;
 	color: white;
 }
 
 /* The content-one id is styled with 70px margin at top with 30% width of avaialble screen width and left text alignment. */
-#content-one{
+#content-one {
 	margin-top: 70px;
-	width:30%;
+	width: 30%;
 	text-align: left;
 }
 
 /* The content-two id is styled with 70px margin at top with 40% width of avaialble screen width and left text alignment. */
-#content-two{
+#content-two {
 	margin-top: 70px;
-	width:40%;
+	width: 40%;
 	text-align: left;
 }
 
 /* The content-three id is styled with 70px margin at top with 30% width of avaialble screen width and right text alignment. */
-#content-three{
+#content-three {
 	margin-top: 70px;
-	width:30%;
+	width: 30%;
 	text-align: right;
 }
 
 /* The th tag inside tr tag of table tag is styled with change in font color, 2px space between letters, 22px font size with weight of 700
 and 20px padding at bottom. */
-table tr th{
+table tr th {
 	font-family: 'Orbitron', sans-serif;
 	letter-spacing: 2px;
 	font-size: 22px;
@@ -185,114 +185,119 @@ table tr th{
 }
 
 /* The td tag inside tr tag and a tag inside td tag of tr tag are styled with white font color and 15px font size with weight of 300. */
-tr td, tr td a{
+tr td,
+tr td a {
 	color: white;
 	font-size: 15px;
 	font-weight: 300;
 }
 
 /* When a inside td tag of tr tag is hovered, it is styled with underline text-decoration. */
-tr td a:hover{
+tr td a:hover {
 	text-decoration: underline;
 }
 
 /* The p tag inside content-three id is styled with change in font color, 2px space between letters, margin set to 0 and 20px padding at bottom and 
 22px font size with weight of 700. */
-#content-three p{
+#content-three p {
 	font-family: 'Orbitron', sans-serif;
 	letter-spacing: 2px;
-	margin:0;
+	margin: 0;
 	font-size: 22px;
 	font-weight: 700;
 	padding-bottom: 20px;
 }
 
 /* The img tag inside social-links class is styled with 38px padding at left. */
-.social-links img{
-    padding-left: 38px;
+.social-links img {
+	padding-left: 38px;
 }
 
 /* The img tag inside social-links when hovered is styled with 40% opacity. */
-.social-links img:hover{
-    opacity: 0.4;
+.social-links img:hover {
+	opacity: 0.4;
 }
 
 /* The copyright class is styled with 1.5px border at top, white font color, height of 50px, 50px margin at top and centered text alignment. */
-.copyright{
+.copyright {
 	border-top: #eeeeee 1.5px solid;
 	color: #ffffff;
-	height:50px;
+	height: 50px;
 	margin-top: 50px;
-    text-align: center;
+	text-align: center;
 }
+
 /* The class intro is styled with change in font-family, positioned from bottom-left of screen, space kept between letters and white font color. */
-.intro{
+.intro {
 	font-family: 'Orbitron', sans-serif;
 	letter-spacing: 2px;
 	color: white;
 	position: absolute;
 	bottom: 30%;
-	left:10%;
+	left: 10%;
 	width: 80%;
-	margin:auto;
-	overflow:hidden;
+	margin: auto;
+	overflow: hidden;
 }
 
 /* The h1 tag inside intro class is styled with font size of 30px with no margin. */
-.intro h1{
+.intro h1 {
 	font-size: 30px;
-	margin:0;
+	margin: 0;
 }
 
 /* The h2 tag inside intro class is styled with font size of 50px with no margin and space between letters set to 2px. */
-.intro h2{
+.intro h2 {
 	font-size: 50px;
 	margin: 0;
 	letter-spacing: 2px;
 }
 
 /* The p tag inside intro class is styled with font size of 20px with font-weight of 600 and no margin. */
-.intro p{
+.intro p {
 	font-size: 20px;
 	font-weight: 600;
-	margin:0;
+	margin: 0;
 }
 
 /* The about class is styled with width of division set to 80%, auto-margin, justified text-alignment and top padding of 50px. */
-.about{
-	width:80%;
-	margin:auto;
+.about {
+	width: 80%;
+	margin: auto;
 	padding-top: 50px;
 	text-align: justify;
 }
 
 /* The h5 tag inside about class and service class is styled with change in font-family, red font color, 
 space between letters set to 6px and margin at bottom set to 20px. */
-.about h5, .services h5{
+.about h5,
+.services h5 {
 	font-family: 'Orbitron', sans-serif;
 	color: #E6121B;
-	margin-bottom:20px;
+	margin-bottom: 20px;
 	letter-spacing: 6px;
 }
+
 /* The h1 tag inside about class and service class is styled with change in font-family, no margin, 
 space between letter set to 4px and bottom-margin of 80px. */
-.about h1, .services h1{
+.about h1,
+.services h1 {
 	font-family: 'Orbitron', sans-serif;
-	margin:0;
+	margin: 0;
 	letter-spacing: 4px;
-	margin-bottom:80px;
+	margin-bottom: 80px;
 }
 
 /* The about-me-content class is styled with flex display format and 40px margin from top. */
-.about-me-content{
-	display:flex;
-	margin-top:40px;
+.about-me-content {
+	display: flex;
+	margin-top: 40px;
 }
 
 /* The p tag inside about-me-content class is styled with 50% width of total width, vertically center alignment,
 20px padding from right, line height of 35px and letter spacing of 0.5px. */
-.about-me-content p{
-	width:50%;
+.about-me-content p {
+	width: 50%;
 	align-self: center;
 	padding-right: 20px;
 	line-height: 35px;
@@ -301,7 +306,7 @@ space between letter set to 4px and bottom-margin of 80px. */
 
 /* The img tag inside about-me-content class is styled with 50% width of total width, border radius of 5px,
 0.5 second time-duration of transition for transformation and timing function of transition set to ease in and ease out. */
-.about-me-content img{
+.about-me-content img {
 	width: 50%;
 	border-radius: 5px;
 	transition: 0.5s;
@@ -309,29 +314,29 @@ space between letter set to 4px and bottom-margin of 80px. */
 }
 
 /* When the img tag inside about-me-content class is hovered, image is manipulated with scale transformation and cursor icon changed to pointer. */
-.about-me-content img:hover{
+.about-me-content img:hover {
 	transform: scale(1.07);
 	cursor: pointer;
 }
 
 /* The service class is styled with width 80% of total width with auto margin that brings the division into 
 horizontal center with padding of 100px from top. */
-.services{
+.services {
 	width: 80%;
-	margin:auto;
+	margin: auto;
 	padding-top: 100px;
 }
 
 /* The services-content class is styled with flex display format and 130px margin from top. */
-.services-content{
-	display:flex;
-	margin-top:130px;
+.services-content {
+	display: flex;
+	margin-top: 130px;
 }
 
 /* The first-content class is styled with width of 32% of total width, centered text alignment, 4px border radius,
 a shadow behind division, 5px thick red border at bottom of div, 1px margin and 0.3s time duration for transition. */
-.first-content{
-	width:32%;
+.first-content {
+	width: 32%;
 	text-align: center;
 	border-radius: 4px;
 	box-shadow: 0px 2px 5px #696969;
@@ -341,16 +346,16 @@ a shadow behind division, 5px thick red border at bottom of div, 1px margin and 
 }
 
 /* When first-content class is hovered shadow increases to 10px wide with change of cursor icon to pointer.*/
-.first-content:hover{
+.first-content:hover {
 	box-shadow: 0px 2px 10px #696969;
 	cursor: pointer;
 }
 
 /* The img tag inside first-content class is styled with negative top margin of 35px, 10px of padding and border radius,
 white background color, gray background shadow behind the image and 0.3s time duration of transition. */
-.first-content img{
+.first-content img {
 	margin-top: -35px;
-	padding:10px;
+	padding: 10px;
 	border-radius: 10px;
 	background: white;
 	box-shadow: 0px -2px 2px #b1b1b1;
@@ -358,33 +363,34 @@ white background color, gray background shadow behind the image and 0.3s time du
 }
 
 /* The img tag when first-content class is hovered is styled with increase of width of shadow to 4px. */
-.first-content:hover img{
+.first-content:hover img {
 	box-shadow: 0px -2px 4px #696969;
 }
 
 /* The h4 tag inside first-content class is styled with change in font family with 1px spacing between letters, 
 30px padding at top, 20px font size and 0px margin. */
-.first-content h4{
+.first-content h4 {
 	font-family: 'Orbitron', sans-serif;
 	letter-spacing: 1px;
 	padding-top: 30px;
 	font-size: 20px;
-	margin:0;
+	margin: 0;
 }
 
 /* The p tag inside first-content class is styled with 0px margin with 30px padding, line height of 35px and 0.5px spacing between letter. */
-.first-content p{
+.first-content p {
 	margin: 0;
-	padding:30px;
+	padding: 30px;
 	line-height: 35px;
 	letter-spacing: 0.5px;
 }
+
 /* All the properties of the elements inside media query is implemented when the browser or device window has width less or equal to 900px. */
-@media(max-width:900px){
+@media(max-width:900px) {
 
 	/* When the device width is less than or equal to 900px, the nav class is styled with height of 80px, 100% of available width, 
 	block display format and centered text alignment. */
-	.nav{
+	.nav {
 		height: 80px;
 		width: 100%;
 		display: block;
@@ -392,21 +398,21 @@ white background color, gray background shadow behind the image and 0.3s time du
 	}
 
 	/* When the device width is less than or equal to 900px, the menu-current id is styled with padding of 10px at right and font size of 12px. */
-	#menu-current{
+	#menu-current {
 		padding: 0px 10px 0 0;
 		font-size: 12px;
 	}
 
 	/* When the device width is less than or equal to 900px, the menu id is styled with 10px padding at left and right and 5px at top and bottom 
 	with font size of 12px. */
-	#menu{
+	#menu {
 		padding: 5px 10px;
 		font-size: 12px;
 	}
 
 	/* When the device width is less than or equal to 900px, the footer-content is styled with 100% of available width, block display format, centered text
 	alignment and 50px padding at top. */
-	.footer-content{
+	.footer-content {
 		width: 100%;
 		display: block;
 		text-align: center;
@@ -415,35 +421,81 @@ white background color, gray background shadow behind the image and 0.3s time du
 
 	/* When the device width is less than or equal to 900px, the content-one id, content-two id and content-three id are styled with 100% of available width
 	and centered text alignment. */
-	#content-one, #content-two, #content-three{
+	#content-one,
+	#content-two,
+	#content-three {
 		width: 100%;
 		text-align: center;
 	}
 
 	/* When the device width is less than or equal to 900px, the table tag is styled with 100% of available width and centered text alignment. */
-	table{
+	table {
 		width: 100%;
 		text-align: center;
 	}
 
 	/* When the device width is less than or equal to 900px, the social-links class is styled with block display format, centered text alignment with
 	20ps padding at top. */
-	.social-links{
+	.social-links {
 		display: block;
 		text-align: center;
-		padding-top:20px;
+		padding-top: 20px;
 	}
 
 	/* When the device width is less than or equal to 900px, the img tag inside social-links class is styled with 20px padding at left and right.  */
-	.social-links img{
-		padding:0 20px;
+	.social-links img {
+		padding: 0 20px;
 	}
 
 	/* When the device width is less than or equal to 900px, the height of 35px and font size of 10px with weight of 300. */
-	.copyright{
-        height: 35px;
+	.copyright {
+		height: 35px;
 		font-size: 10px;
 		font-weight: 300;
 	}
-	
+
+	/* When the device width is less than or equal to 900px, intro class is styled to 15% height from bottom. */
+	.intro {
+		bottom: 15%;
+	}
+
+	/* When the device width is less than or equal to 900px, h1 tag inside intro class is styled to 20px font size. */
+	.intro h1 {
+		font-size: 20px;
+	}
+
+	/* When the device width is less than or equal to 900px, h2 tag inside intro class is styled to 35px font size. */
+	.intro h2 {
+		font-size: 35px;
+	}
+
+	/* When the device width is less than or equal to 900px, p tag inside intro class is styled to 15px font size. */
+	.intro p {
+		font-size: 15px;
+	}
+
+
+	/* When the device width is less than or equal to 900px, display format of about-me-content class is styled to block. */
+	.about-me-content {
+		display: block;
+	}
+
+	/* When the device width is less than or equal to 900px, p tag and img tag inside intro class is styled to 100% width. */
+	.about-me-content p,
+	.about-me-content img {
+		width: 100%;
+	}
+
+	/* When the device width is less than or equal to 900px, display format of services-content class is styled to block. */
+	.services-content {
+		display: block;
+	}
+
+	/* When the device width is less than or equal to 900px, display format of first-content class is styled with 100% width,
+		top and bottom margin of 80px each. */
+	.first-content {
+		width: 100%;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
 }
